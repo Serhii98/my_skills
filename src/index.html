@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My skills</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="/public/logo.png" alt="My skills logo" class="header__logo-img">
+            <span class="header__logo-text">My skills</span>
+        </div>
+        <nav class="header__nav">
+            <div class="tabs">
+                <button class="tabs__tab tabs__tab--active" data-target="about">Про платформу</button>
+                <button class="tabs__tab" data-target="tech">Наші технології</button>
+                <button class="tabs__tab" data-target="forms">Анкети</button>
+            </div>
+            <div class="header__divider"></div>
+            <button class="header__login">Увійти</button>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="content__section content__section--active" id="about">
+            <div class="hero">
+                <div class="hero__inner">
+                    <img class="hero__logo" src="/public/logo.png" alt="Логотип My Skills" />
+
+                    <h1 class="hero__title">My Skills</h1>
+
+                    <p class="hero__subtitle">
+                        Платформа, створена для ефективного представлення та просування
+                        ваших професійних навичок у цифровому світі.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" id="startBtn" href="#start">Почати</a>
+                        <a class="btn btn--ghost" href="#more">Дізнатися більше→</a>
+                    </div>
+                </div>
+
+                <div class="support">
+                    <span class="flag">🇺🇦</span>
+                    <span>Зробити внесок на рахунок фонду допомоги ЗСУ</span>
+                    <a class="support__link" href="#" target="_blank" rel="noopener">Підтримати</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="content__section">
+            <div class="features">
+                <div class="container">
+                    <div class="features-header">
+                        <img src="/public/logo.png" alt="My Skills logo" class="features-logo" />
+                        <h2 class="features-title">My skills</h2>
+                        <p class="features-subtitle">
+                            Твоя експертиза та твої навички, то твоя сила! А інші люди тому доказ.
+                        </p>
+                        <p class="features-description">
+                            "My Skills" – це інноваційна платформа, створена для ефективного представлення та просування
+                            ваших професійних навичок у цифровому світі...
+                        </p>
+                    </div>
+
+                    <div class="features-list">
+                        <div class="feature-card">
+                            <div class="feature-card__icon">👤</div>
+                            <div class="feature-card__content">
+                                <h3>Особисті профілі</h3>
+                                <p>
+                                    Створіть унікальний профіль з ключовими навичками та досвідом.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-card__icon">✔</div>
+                            <div class="feature-card__content">
+                                <h3>Власний список цілей</h3>
+                                <p>
+                                    Використовуйте профіль для керування завданнями та цілями.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content__section" id="tech">
+            <h2>Наші технології</h2>
+            <p>Тут опис технологій.</p>
+        </section>
+
+        <section class="content__section" id="forms">
+            <h2>Анкети</h2>
+            <p>Тут доступні анкети.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
