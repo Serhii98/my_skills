@@ -265,15 +265,123 @@ body {
 }
 
 .feature-card:nth-child(odd) {
-    margin-left: auto;  
+    margin-left: auto;
     margin-right: 0;
-    flex-direction: row; 
+    flex-direction: row;
     text-align: right;
 }
 
 .feature-card:nth-child(even) {
-    margin-left: 0; 
+    margin-left: 0;
     margin-right: auto;
     flex-direction: row-reverse;
     text-align: left;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.tech-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.tech-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.tech-info span {
+    font-size: 14px;
+    color: #475569;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+.form-content {
+    padding: 30px;
+    flex: 2;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-photo {
+    flex: 1;
+}
+
+.form-photo img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.form-content h2 {
+    margin-top: 0;
+}
+
+.position {
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.location {
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #333;
+    line-height: 1.5;
+}
+
+.view-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.socials {
+    margin-top: 25px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
 }
