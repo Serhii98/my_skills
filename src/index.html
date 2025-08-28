@@ -156,7 +156,7 @@
                         місцем роботи, місцем проживання, описанням і додатковими посиланнями на соціальні мережі.
                         Крім того, в анкеті включено список задач TODO з інформацією про названня, описання, статус,
                         дату створення і строк виконання кожної задачі.</div>
-                    <a class="view-button" href="#">Дивитись анкету</a>
+                    <a class="view-button" id="viewForm" href="#">Дивитись анкету</a>
                     <div class="socials">
                         <img src="/public/facebook.png" alt="facebook" class="social-icon" />
                         <img src="/public/github.png" alt="github" class="social-icon" />
@@ -167,6 +167,47 @@
                 <div class="form-photo">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PNG_Test.png/960px-PNG_Test.png"
                         alt="Фото користувача" />
+                </div>
+            </div>
+        </section>
+
+        <section class="content__section" id="form_details">
+            <div class="form_details">
+                <div class="form_details-content">
+                    <h2>Іванов Іван Іванович 32</h2>
+                    <div class="position">💼 Full Stack Developer</div>
+                    <div class="location">📍 Україна, Дніпро</div>
+                    <div class="description">Цей JSON представляє собою приклад анкети користувача з повним іменем,
+                        фотографією,
+                        місцем роботи, місцем проживання, описанням і додатковими посиланнями на соціальні мережі.
+                        Крім того, в анкеті включено список задач TODO з інформацією про названня, описання, статус,
+                        дату створення і строк виконання кожної задачі.</div>
+                    <div id="todo" class="todo_header">
+                        <h2>Мій todo-лист на цей місяць</h2>
+                        <div class="input_block">
+                            <input type="text" id="myInput" placeholder="Що хочете вивчити?">
+                            <span onclick="newElement()" class="addBtn">Додати</span>
+                        </div>
+
+                    </div>
+
+                    <ul id="myUL">
+                        <li>Node.js</li>
+                        <li class="checked">React.js</li>
+                        <li>Next.js</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="form_details-photo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PNG_Test.png/960px-PNG_Test.png"
+                        alt="Фото користувача" />
+                    <div class="socials">
+                        <img src="/public/facebook.png" alt="facebook" class="social-icon" />
+                        <img src="/public/github.png" alt="github" class="social-icon" />
+                        <img src="/public/instagram.png" alt="instagram" class="social-icon" />
+                        <img src="/public/linkedin.png" alt="linkedin" class="social-icon" />
+                    </div>
                 </div>
             </div>
         </section>
